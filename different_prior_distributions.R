@@ -5,9 +5,12 @@
 #                                                #
 ##################################################
 
-## these are functions calculating Bayes factor using different prior distributions
+## These are functions calculating Bayes factor using different prior distributions
 ## in all of these functions information can be provided about results of a previous study
 ## to be able to calculate replication Bayes factor. Or uninformed prior can also be used.
+
+# The functions were created by modifying Richard Morey's Bayes factor calculator functions
+# some of which are used in the BayesFactor R package
 
 
 ### Functions for beta prior
@@ -72,7 +75,6 @@ BF01_norm_approx_beta = Vectorize(function(y, N, y_prior, N_prior, interval, nul
 
 
 ### functions for logistic prior
-### based on Richard Morey's functions
 
 fullAlt_logis = Vectorize(function(theta, y, N, prior_mean_lo, prior_sd_lo){
   p = plogis(theta)
@@ -108,7 +110,6 @@ BF01_logis = Vectorize(function(y, N, y_prior, N_prior, interval, null_prob){
 
 
 ### functions for normal prior approximating the logistic distibution
-### based on Richard Morey's functions
 
 fullAlt_norm = Vectorize(function(theta, y, N, prior_mean_lo, prior_sd_lo){
   p = plogis(theta)
