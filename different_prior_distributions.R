@@ -170,8 +170,8 @@ bf.norm_approx_logis = NA
 bf.norm_approx_beta = NA
 
 null_prob = 0.5
-y_prior = 6.5 # information from a previous study. To get uninformed prior: y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
-N_prior = 13 # information from a previous study. To get uninformed prior: y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
+y_prior = 6.5 # information from a previous study. To get uninformed prior: y_prior = 0 and N_prior = 0 will result in uniform prior, y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
+N_prior = 13 # information from a previous study. To get uninformed prior: y_prior = 0 and N_prior = 0 will result in uniform prior, y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
 interval = c(0.5,1)
 
 for(i in 1:length(multip)){
@@ -221,8 +221,8 @@ bf.norm_approx_logis = NA
 bf.norm_approx_beta = NA
 
 null_prob = 0.5
-y_prior = 6.5 # information from a previous study. To get uninformed prior: y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
-N_prior = 13 # information from a previous study. To get uninformed prior: y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
+y_prior = 6.5 # information from a previous study. To get uninformed prior: y_prior = 0 and N_prior = 0 will result in uniform prior, y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
+N_prior = 13 # information from a previous study. To get uninformed prior: y_prior = 0 and N_prior = 0 will result in uniform prior, y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
 interval = c(0.5,1)
 
 for(i in 1:length(multip)){
@@ -273,8 +273,8 @@ bf.norm_approx_beta = NA
 
 
 null_prob = 0.5
-y_prior = 828 # information from a previous study. To get uninformed prior: y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
-N_prior = 1560 # information from a previous study. To get uninformed prior: y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
+y_prior = 828 # information from a previous study. To get uninformed prior: y_prior = 0 and N_prior = 0 will result in uniform prior, y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
+N_prior = 1560 # information from a previous study. To get uninformed prior: y_prior = 0 and N_prior = 0 will result in uniform prior, y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
 interval = c(0.5,1)
 
 for(i in 1:length(multip)){
@@ -324,8 +324,8 @@ bf.norm_approx_logis = NA
 bf.norm_approx_beta = NA
 
 null_prob = 0.5
-y_prior = 828 # information from a previous study. To get uninformed prior: y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
-N_prior = 1560 # information from a previous study. To get uninformed prior: y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
+y_prior = 828 # information from a previous study. To get uninformed prior: y_prior = 0 and N_prior = 0 will result in uniform prior, y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
+N_prior = 1560 # information from a previous study. To get uninformed prior: y_prior = 0 and N_prior = 0 will result in uniform prior, y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
 interval = c(0.5,1)
 
 for(i in 1:length(multip)){
