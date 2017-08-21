@@ -174,14 +174,6 @@ y_prior = 6.5 # information from a previous study. To get uninformed prior: y_pr
 N_prior = 13 # information from a previous study. To get uninformed prior: y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
 interval = c(0.5,1)
 
-# the below is needed to calculate the rscale parameter for the proportionBF within BayesFactor package
-alpha = y_prior + 1
-beta = N_prior - y_prior + 1
-mean = alpha/(alpha + beta)
-var = (alpha*beta)/(((alpha + beta)^2)*(1 + alpha + beta))
-prior_mean_lo = qlogis(mean)
-prior_sd_lo = sqrt( var / dlogis( prior_mean_lo )^2 )
-
 for(i in 1:length(multip)){
   y = ys[i]
   N = Ns[i]
@@ -232,14 +224,6 @@ null_prob = 0.5
 y_prior = 6.5 # information from a previous study. To get uninformed prior: y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
 N_prior = 13 # information from a previous study. To get uninformed prior: y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
 interval = c(0.5,1)
-
-# the below is needed to calculate the rscale parameter for the proportionBF within BayesFactor package
-alpha = y_prior + 1
-beta = N_prior - y_prior + 1
-mean = alpha/(alpha + beta)
-var = (alpha*beta)/(((alpha + beta)^2)*(1 + alpha + beta))
-prior_mean_lo = qlogis(mean)
-prior_sd_lo = sqrt( var / dlogis( prior_mean_lo )^2 )
 
 for(i in 1:length(multip)){
   y = ys[i]
@@ -293,14 +277,6 @@ y_prior = 828 # information from a previous study. To get uninformed prior: y_pr
 N_prior = 1560 # information from a previous study. To get uninformed prior: y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
 interval = c(0.5,1)
 
-# the below is needed to calculate the rscale parameter for the proportionBF within BayesFactor package
-alpha = y_prior + 1
-beta = N_prior - y_prior + 1
-mean = alpha/(alpha + beta)
-var = (alpha*beta)/(((alpha + beta)^2)*(1 + alpha + beta))
-prior_mean_lo = qlogis(mean)
-prior_sd_lo = sqrt( var / dlogis( prior_mean_lo )^2 )
-
 for(i in 1:length(multip)){
   y = ys[i]
   N = Ns[i]
@@ -351,14 +327,6 @@ null_prob = 0.5
 y_prior = 828 # information from a previous study. To get uninformed prior: y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
 N_prior = 1560 # information from a previous study. To get uninformed prior: y_prior = 6.5 and N_prior = 13 will result in rscale = 0.5, y_prior = 0.5 and N_prior = 1 will result in rscale = 1 in the proportionBF function of the BayesFactor package
 interval = c(0.5,1)
-
-# the below is needed to calculate the rscale parameter for the proportionBF within BayesFactor package
-alpha = y_prior + 1
-beta = N_prior - y_prior + 1
-mean = alpha/(alpha + beta)
-var = (alpha*beta)/(((alpha + beta)^2)*(1 + alpha + beta))
-prior_mean_lo = qlogis(mean)
-prior_sd_lo = sqrt( var / dlogis( prior_mean_lo )^2 )
 
 for(i in 1:length(multip)){
   y = ys[i]
